@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+.sectio-padding{
+    padding: 100px 0px;
+}
+.line{
+    width: 200px;
+    background: #cb7b1b;
+    height: 5px;
+    margin: 10px 0px 25px;
+    border-radius: 50px;
+}
+header{
+    background: #fff;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 2px solid #8f3862;
+    padding: 0 15px;
+}
+.nav-link{
+    color: #000 !important;
+    font-weight: 600;
+}
+/* Banner */
+.banner{
+    position: relative;
+    background: url(./img/banner.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    padding: 250px 0 200px;
+}
+.teffect h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    font-weight: 700;
+    animation: animate 3s steps(19) infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+@keyframes animate {
+form{
+    width: 0;
+}    
+to{
+    width: 580px;
+}
+}
+.banner p{
+    margin: 1em 0 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #262626;
+}
+.banner a{
+    display: inline-block;
+    background: #8f3862;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 30px;
+
+}
+
+/* About Sections Codes */
+#about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-img img{
+    width: 100%;
+}
+.about-content{
+    padding-top: 30px;
+}
+.about-content h2{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.about-content p{
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+.about-content a{
+    background:#8f3862;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+}
+/* Stats */
+.state{
+    text-align: center;
+    background: #8f3862;
+    color: #fff;
+    padding: 30px 0px;
+}
+.stat i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.stat h2{
+    font-size: 40px;
+}
+
+/* PortFolio */
+.section-header{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.section-header .line{
+    margin: 15px auto;
+}
+.row .port-img img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.portfolio img:hover{
+    transition: all .9s;
+    opacity: .5;
+}
+.quotes{
+    text-align: center;
+    background: #8f3862;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.quotes .btn-primary{
+    background: #fff;
+    color: #262626;
+}
+/* Services Section */
+.single-services{
+    padding: 40px 20px;
+    margin: 0 15px 15px;
+    text-align: center;
+}
+.service-icon{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+}
+.service-icon i{
+    font-size: 35px;
+    color: #222;
+}
+.single-services:hover i{
+    transform: scale(1.4) rotate(360deg);
+    transition: 0.9s;
+    color: #8f3862;
+}
+.single-services h2{
+    line-height: 1.9;
+    font-weight: 700;
+}
+.single-services:hover h2{
+    color: #8f3862;
+    transition: 0.9s;
+}
+/* Conatct */
+.single-contact{
+    padding: 10px;
+    text-align: center;
+}
+.contact-icon{
+    width: 40px;
+    height: 40px;
+    margin: 15px auto;
+}
+.contact-icon i{
+    color: #8f3862;
+    font-size: 35px;
+}
+.contact .btn-primary{
+    color: #fff;
+    background: #8f3862;
+    padding: 12px 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  
+}
+.form-control{
+    width: 90% !important;
+}
+footer p{
+    background-color: #8f3862;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+    font-size: 18px;
+    padding: 10px;
+}
+/* Resposnive Code For Media Query */
+
+@media (min-width:768px) and (max-width:991px) {
+    .banner{
+        padding: 364px 0 0;
+        background-position: 69% 100%;
+    }
+    .stat{
+        margin-bottom: 30px;
+    }
+    
+}
+@media (max-width:767px) {
+    body{
+        overflow-x: hidden;
+    }
+    .section-padding{
+        padding: 80px 0px;
+    }
+    .banner{
+        padding: 150px 0px 0px;
+        background-position: 62% 100%;
+    }
+    .banner h2{
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .banner p{
+        font-size: 0.7em;
+        color: #000;
+    }
+    .about-content h2{
+        font-size: 21px;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .stat{
+        margin-bottom: 30px;
+    }
+    .single-contact{
+        margin-bottom: 40px;
+    }
+    .single-services{
+        padding: 0;
+        margin: 0;
+    }
+    
+}
